@@ -1,0 +1,122 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  font-family: "Comic Sans MS";
+  width: 100%;
+  height: 100%;
+}
+.task {
+  width: 1328px;
+  height: 817px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -664px;
+  margin-top: -409px;
+  background-color: #fff;
+  border-radius: 34px;
+  box-shadow: 0 3px 6px -4px #0000001f, 0 6px 16px #00000014,
+    0 9px 28px 8px #0000000d;
+}
+.task-header {
+  height: 56px;
+  margin-top: 40px;
+  line-height: 56px;
+  font-size: 40px;
+  color: #295148;
+  padding-left: 100px;
+}
+.task-form {
+  overflow: hidden;
+  margin-top: 40px;
+}
+.task-form-item {
+  float: left;
+  margin-left: 220px;
+}
+.task-form-item-name {
+  font-size: 20px;
+}
+.task-form-item-input {
+  height: 68px;
+  width: 336px;
+  display: block;
+  margin: 24px auto;
+  line-height: 68px;
+  border: 1px solid #707070;
+  border-radius: 19px;
+  padding-left: 19px;
+  font-size: 20px;
+}
+.task-form-item-textarea {
+  height: 68px;
+  width: 336px;
+  display: block;
+  margin: 24px auto;
+  line-height: 34px;
+  border: 1px solid #707070;
+  border-radius: 19px;
+  padding-left: 19px;
+  font-size: 20px;
+}
+.task-form-item-level {
+  display: flex;
+  margin: 24px auto;
+  border-right: 1px solid #000;
+}
+.task-form-item-level-item {
+  width: 112px;
+  height: 68px;
+  line-height: 68px;
+  text-align: center;
+  border: 1px solid #000;
+  border-right: 0;
+}
+.task-form-item-level-item-active {
+  color: #fff;
+  background: #295148;
+}
+.task-form-item-time {
+  display: flex;
+  margin: 24px auto;
+}
+.task-form-item-time-item {
+  width: 160px;
+  height: 68px;
+  margin-right: 16px;
+  line-height: 68px;
+  text-align: center;
+  border: 1px solid #000;
+}
+.task-form-item-time-item-input {
+  width: 80px;
+  height: 65px;
+  margin-right: 16px;
+  line-height: 66px;
+  border: 0;
+  font-size: 20px;
+  outline: none;
+}
+.task-footer {
+  height: 46px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}
+.task-footer-btn {
+  height: 46px;
+  width: 120px;
+  background: #295148;
+  color: #fff;
+  text-align: center;
+  border-radius: 18px;
+  line-height: 46px;
+  font-weight: bold;
+  margin: 0 24px;
+  cursor: pointer;
+}
