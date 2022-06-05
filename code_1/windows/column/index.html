@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Columns</title>
+  <link rel="stylesheet" href="./index.css">
+  <script src="../../common.js"></script>
+  <script src="./index.js"></script>
+</head>
+
+<body>
+  <div class="column">
+    <div class="column-header">
+      <div id="title" class="column-header-name">Add Column</div>
+      <img class="column-header-icon" onclick="handleCancel({ type: 'column' })" src="../../assets/cancel.svg" alt="">
+    </div>
+    <input id="columnName" class="column-input" placeholder="Column Name?" type="text">
+    <div class="column-footer">
+      <div class="column-footer-btn" onclick="handleSave()">Save</div>
+      <div class="column-footer-btn" onclick="handleCancel({type:'column'})">Cancel</div>
+      <div id="delete" class="column-footer-btn" style="display: none;" onclick="handleDelete()">Delete</div>
+    </div>
+  </div>
+</body>
+
+</html>

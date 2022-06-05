@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Content</title>
+  <link rel="stylesheet" href="./index.css">
+  <script src="../../common.js"></script>
+  <script src="./index.js"></script>
+</head>
+
+<body>
+  <div class="content">
+    <div id="title" class="content-header">
+      Create a content
+    </div>
+    <div class="content-form">
+      <div class="content-form-item">
+        <div class="content-form-item-name">
+          Content Name
+        </div>
+        <input id="contentName" class="content-form-item-input" type="text">
+      </div>
+      <div class="content-form-item">
+        <div class="content-form-item-name">
+          Description
+        </div>
+        <textarea id="description" class="content-form-item-textarea" type="text"></textarea>
+      </div>
+      <div class="content-form-item">
+        <div class="content-form-item-name">
+          Group
+        </div>
+        <select id="groupName" class="content-form-item-input">
+        </select>
+      </div>
+      <div class="content-form-item">
+        <div class="content-form-item-name">
+          Link
+        </div>
+        <input id="link" class="content-form-item-input" type="text">
+      </div>
+    </div>
+    <div class="content-footer">
+      <div class="content-footer-btn" onclick="handleSave()">Save</div>
+      <div class="content-footer-btn" onclick="handleCancel({type:'content'})">Cancel</div>
+      <div id="delete" class="content-footer-btn" style="display: none;" onclick="handleDelete()">Delete</div>
+    </div>
+  </div>
+</body>
+
+</html>

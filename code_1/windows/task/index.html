@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Task</title>
+  <link rel="stylesheet" href="./index.css">
+  <script src="../../common.js"></script>
+  <script src="./index.js"></script>
+</head>
+
+<body>
+  <div class="task">
+    <div id="title" class="task-header">
+      Create a Task
+    </div>
+    <div class="task-form">
+      <div class="task-form-item">
+        <div class="task-form-item-name">
+          Task Name
+        </div>
+        <input id="taskName" class="task-form-item-input" type="text">
+      </div>
+      <div class="task-form-item">
+        <div class="task-form-item-name">
+          Column
+        </div>
+        <select id="columnName" class="task-form-item-input">
+        </select>
+      </div>
+      <div class="task-form-item">
+        <div class="task-form-item-name">
+          Description Title
+        </div>
+        <input id="descriptionTitle" class="task-form-item-input" type="text">
+      </div>
+      <div class="task-form-item">
+        <div class="task-form-item-name">
+          Priority Level
+        </div>
+        <div class="task-form-item-level">
+          <div onclick="handleLevel(this, 'Low')" class="task-form-item-level-item task-form-item-level-item-active">Low
+          </div>
+          <div onclick="handleLevel(this, 'Mid')" class="task-form-item-level-item">Mid</div>
+          <div onclick="handleLevel(this, 'High')" class="task-form-item-level-item">High</div>
+        </div>
+      </div>
+      <div class="task-form-item">
+        <div class="task-form-item-name">
+          Description
+        </div>
+        <textarea id="description" class="task-form-item-textarea" type="text"></textarea>
+      </div>
+      <div class="task-form-item">
+        <div class="task-form-item-name">
+          Time estimation
+        </div>
+        <div class="task-form-item-time">
+          <div class="task-form-item-time-item">
+            <input id="hr" class="task-form-item-time-item-input" value="00" type="text" />HR
+          </div>
+          <div class="task-form-item-time-item">
+            <input id="min" class="task-form-item-time-item-input" value="00" type="text" />Min
+          </div>
+        </div>
+      </div>
+      <div class="task-form-item">
+        <div class="task-form-item-name">
+          Due Date
+        </div>
+        <input id="date" class="task-form-item-input" type="text">
+      </div>
+    </div>
+    <div class="task-footer">
+      <div class="task-footer-btn" onclick="handleSave()">Save</div>
+      <div class="task-footer-btn" onclick="handleCancel({type:'task'})">Cancel</div>
+      <div id="delete" class="task-footer-btn" style="display: none;" onclick="handleDelete()">Delete</div>
+    </div>
+  </div>
+</body>
+
+</html>

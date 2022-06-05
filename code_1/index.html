@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Stud+bud</title>
+  <link rel="stylesheet" href="./index.css">
+  <script src="./common.js"></script>
+  <script src="./index.js"></script>
+</head>
+
+<body>
+  <div class="header">
+    <img class="header-logo" src="./assets/logo.svg" alt="">
+    <div style="flex:1">
+    </div>
+    <div id="column-add" class="header-right">
+      <div class="header-right-btn" onclick="handleOpenWindow('task')">+ Add Task</div>
+      <div class="header-right-btn" onclick="handleOpenWindow('column')">+ Add Column</div>
+    </div>
+    <div id="group-add" class="header-right" style="display: none;">
+      <div class="header-right-btn" onclick="handleOpenWindow('content')">+ Add Content</div>
+      <div class="header-right-btn" onclick="handleOpenWindow('group')">+ Add Group</div>
+    </div>
+    <div class="header-center">
+      <div class="header-center-btn header-center-btn-active" onclick="handleBar(this, 'column')">Calendar</div>
+      <div class="header-center-time" onclick="handleOpenTime()">
+        <span id="time" class="header-center-time-num">00:00</span>
+        <img class="header-center-time-icon" src="./assets/down.svg" alt="">
+      </div>
+      <div class="header-center-btn" onclick="handleBar(this, 'group')">Details</div>
+    </div>
+  </div>
+  <div class="body">
+    <div id="column" class="body-column">
+    </div>
+    <div id="group" class="body-group" style="display: none;">
+    </div>
+  </div>
+  <div class="footer">
+    <div id="footerMusic" class="footer-left">
+    </div>
+    <div class="footer-center">
+      <img id="last" onclick="handleLast()" class="footer-center-icon" src="./assets/last.svg">
+      <img id="play" onclick="handlePlay()" class="footer-center-play" src="./assets/play.svg">
+      <img id="pause" onclick="handlePause()" class="footer-center-play" style="display: none;"
+        src="./assets/pause.svg">
+      <img id="next" onclick="handleNext()" class="footer-center-icon" src="./assets/next.svg">
+      <div id="current" class="footer-center-current"></div>
+      <div class="footer-center-progress">
+        <div id="progress" class="footer-center-progress-color"></div>
+      </div>
+      <div id="duration" class="footer-center-duration"></div>
+    </div>
+    <div class="footer-right">
+      <img class="footer-right-icon" id="list" onclick="handleList()" src="./assets/list.svg">
+      <img class="footer-right-icon" id="one" onclick="handleOne()" style="display: none;" src="./assets/one.svg">
+      <img class="footer-right-icon" id="shuffle" onclick="handleShuffle()" style="display: none;"
+        src="./assets/shuffle.svg">
+      <img class="footer-right-icon" id="show" onclick="showMusicList()" src="./assets/show.svg">
+      <img class="footer-right-icon" id="hide" onclick="hideMusicList()" style="display: none;"
+        src="./assets/hide-white.svg">
+    </div>
+    <audio id="audio" style="display: none;" src=""></audio>
+  </div>
+  <div class="music" id="musicBg" style="display: none;">
+    <div class="music-body" id="musicBody"></div>
+  </div>
+  <div id="window-box" class="window-box" style="display: none;">
+    <iframe id="window-iframe" class="window-iframe" width="100%" height="100%" frameborder="0"></iframe>
+  </div>
+  <div id="time-box" class="window-box" style="display: none;">
+    <iframe src="./windows/time/index.html" class="window-iframe" id="time-iframe" width="100%" height="100%"
+      frameborder="0"></iframe>
+  </div>
+</body>
+
+</html>

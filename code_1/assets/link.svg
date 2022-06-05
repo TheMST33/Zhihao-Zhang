@@ -1,0 +1,11 @@
+<svg id="组件_1_10" data-name="组件 1 – 10" xmlns="http://www.w3.org/2000/svg" width="43" height="30" viewBox="0 0 43 30">
+  <g id="矩形_182" data-name="矩形 182" fill="none" stroke="#295148" stroke-width="1">
+    <rect width="35" height="18" rx="9" stroke="none"/>
+    <rect x="0.5" y="0.5" width="34" height="17" rx="8.5" fill="none"/>
+  </g>
+  <rect id="矩形_183" data-name="矩形 183" width="6" height="17" transform="translate(7 4)" fill="#fff"/>
+  <g id="矩形_184" data-name="矩形 184" transform="translate(8 12)" fill="none" stroke="#295148" stroke-width="1">
+    <rect width="35" height="18" rx="9" stroke="none"/>
+    <rect x="0.5" y="0.5" width="34" height="17" rx="8.5" fill="none"/>
+  </g>
+</svg>

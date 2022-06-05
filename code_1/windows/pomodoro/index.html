@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pomodoro</title>
+  <link rel="stylesheet" href="./index.css">
+  <script src="../../common.js"></script>
+  <script src="./index.js"></script>
+</head>
+
+<body>
+  <div class="pomodoro">
+    <div class="pomodoro-header">
+      <div class="pomodoro-header-name">
+        Pomodoro
+        <img id="back" class="pomodoro-header-name-icon" onclick="handleOpenTime()" src="../../assets/down_green.svg"
+          alt="">
+      </div>
+      <img class="pomodoro-header-icon" onclick="handleCancel({type:'pomodoro'})" src="../../assets/hide.svg" alt="">
+    </div>
+    <div id="pomodoro" style="display: none;" class="pomodoro-body">00:00</div>
+    <div id="set" class="pomodoro-set">
+      <div class="pomodoro-set-item">
+        <div class="pomodoro-set-item-name">Work For:</div>
+        <div id="work" class="pomodoro-set-item-num">05:00</div>
+        <img class="pomodoro-set-item-icon" onclick="handleMinusWork()" src="../../assets/minus.svg" alt="">
+        <img class="pomodoro-set-item-icon" onclick="handlePlusWork()" src="../../assets/plus.svg" alt="">
+      </div>
+      <div class="pomodoro-set-item">
+        <div class="pomodoro-set-item-name">Break For:</div>
+        <div id="break" class="pomodoro-set-item-num">05:00</div>
+        <img class="pomodoro-set-item-icon" onclick="handleMinusBreak()" src="../../assets/minus.svg" alt="">
+        <img class="pomodoro-set-item-icon" onclick="handlePlusBreak()" src="../../assets/plus.svg" alt="">
+      </div>
+      <div class="pomodoro-set-item">
+        <div class="pomodoro-set-item-name">Loop For:</div>
+        <div id="loop" class="pomodoro-set-item-num">1</div>
+        <img class="pomodoro-set-item-icon" onclick="handleMinusLoop()" src="../../assets/minus.svg" alt="">
+        <img class="pomodoro-set-item-icon" onclick="handlePlusLoop()" src="../../assets/plus.svg" alt="">
+      </div>
+    </div>
+    <div class="pomodoro-footer">
+      <div id="start" class="pomodoro-footer-btn" onclick="handleStart()">Start</div>
+      <div id="end" style="display: none;" class="pomodoro-footer-btn" onclick="handleEnd()">End</div>
+    </div>
+  </div>
+</body>
+
+</html>

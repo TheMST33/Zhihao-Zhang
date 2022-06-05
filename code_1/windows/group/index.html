@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Group</title>
+  <link rel="stylesheet" href="./index.css">
+  <script src="../../common.js"></script>
+  <script src="./index.js"></script>
+</head>
+
+<body>
+  <div class="group">
+    <div class="group-header">
+      <div id="title" class="group-header-name">Add Group</div>
+      <img class="group-header-icon" onclick="handleCancel({type:'group'})" src="../../assets/cancel.svg" alt="">
+    </div>
+    <input id="groupName" class="group-input" placeholder="Group Name?" type="text">
+    <div class="group-footer">
+      <div class="group-footer-btn" onclick="handleSave()">Save</div>
+      <div class="group-footer-btn" onclick="handleCancel({type:'group'})">Cancel</div>
+      <div id="delete" class="group-footer-btn" style="display: none;" onclick="handleDelete()">Delete</div>
+    </div>
+  </div>
+</body>
+
+</html>
