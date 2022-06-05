@@ -1,29 +1,29 @@
-// 根据id获取dom
+// get dom based on the id
 function getId(name) {
   return document.getElementById(name);
 }
 
-// 根据classname获取dom
+// get dom based on the class name
 function getClass(name) {
   return document.getElementsByClassName(name);
 }
 
-// 获取本地数据
+// get local storage
 function getData(name) {
   return JSON.parse(localStorage.getItem(name));
 }
 
-// 数据存储本地
+// save the data in the local storage
 function setData(name, obj) {
   localStorage.setItem(name, obj);
 }
 
-// 关闭页面
+// close pages 
 function handleCancel(data) {
   window.parent.postMessage(data, "*");
 }
 
-// 获取url传参
+// get url and transit elements
 function getUrlParams(key) {
   var arr = window.location.search.slice(1).split("&");
   var obj = {};
@@ -34,7 +34,7 @@ function getUrlParams(key) {
   return obj[key];
 }
 
-// 获取时间
+// get and set the time
 function getTime(time) {
   var sec = time % 60;
   if (sec < 10) {
